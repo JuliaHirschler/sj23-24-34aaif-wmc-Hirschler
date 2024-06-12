@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="IMGS/books-2022463_960_720.png" />
+    <title>Online Library</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="CSS/indexCSS.css"/>
+
+
+  </head>
+
+  <body>
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.html">
+      Virtual Bookshelf
+      <img src="IMGS/books-2022463_960_720.png" alt="Logo" style="width: 45px"/>
+    </a>
+  </nav>
+
+
+
+    <style>
+      body, html {
+        height: 100%;
+      }
+      
+      .parallax {
+        /* The image used */
+        background: url('IMGS/library-1082309_960_720.webp'), rgb(96, 96, 96);
+        background-blend-mode:multiply;
+        opacity: 70%;
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      </style>
+     
+
+      <section class="parallax"></section>
+  <section class="form-container">
+    <h2>Add a Book to shelf</h2>
+    <form id="bookForm">
+      <section class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required />
+      </section>
+      <section class="form-group">
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author" required />
+      </section>
+      <section class="form-group toggle-container">
+        <input type="checkbox" id="read" name="read" />
+        <label for="read">Read</label>
+      </section>
+      <section class="form-group">
+        <label for="rating">Rating</label>
+        <select id="rating" name="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </section>
+      <section class="form-group">
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment" rows="3"></textarea>
+      </section>
+      <button id="addBook" type="button" class="btn">Add Book</button>
+      <button id="sortBewertung" type="button" class="btn">Sort by rating</button>
+    </form>
+  </section>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Read</th>
+      <th>Bewertung</th>
+      <th>Kommentar</th>
+    </tr>
+    </thead>
+
+    <tbody id="book-list">
+
+    </tbody>
+  </table>
+
+    <p class="container-fluid">Welcome to your bookshelf!</p>
+  <section class="parallax"></section>
+    <p class="devTitle">
+      Virtual Bookshelf is a website which allows users to store their books, give feedback and rate it. It helps you to keep track of the books that you've read or the ones which still need to be read.
+    </p>
+  <script src="PHP/script.js"></script>
+  </body>
+</html>

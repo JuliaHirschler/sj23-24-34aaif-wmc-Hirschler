@@ -1,0 +1,43 @@
+.nav-link {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+.navbar-brand {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+}
+.container-fluid {
+    color: white;
+    background-color: #343a409f;
+    left: 0;
+    line-height: 300px;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    width: 100%;
+    font-size: 100px;
+    font-family: "Rajdhani", sans-serif;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
